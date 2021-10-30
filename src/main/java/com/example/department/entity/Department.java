@@ -14,7 +14,7 @@ import javax.persistence.*;
 @Table(name="Departments")
 public class Department {
     @Id
-    private Long Id;
-    private String DepartmentName;
-    private double price;
+    @GeneratedValue
+    private Long departmentId;
+    private String departmentName;
 }
